@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponseRedirect
+from django.urls import reverse
 from .forms import SignUpForm
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm , PasswordChangeForm
@@ -80,7 +81,8 @@ def add_show(request):
                 
                 reg = Books(book_name = nm, author=em,published_on =am,category=sm,price=pn)
                 reg.save()
-                fm = BooksRegistration()
+                #fm = BooksRegistration()
+                return HttpResponseRedirect("/login/")
         else:
             fm = BooksRegistration()
         led = Books.objects.all()

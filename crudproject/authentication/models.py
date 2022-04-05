@@ -1,4 +1,5 @@
 from datetime import timezone
+import datetime
 from django.db import models
 from decimal import *
 
@@ -15,7 +16,8 @@ STATUS_CHOICES = (
 class Books(models.Model):
     book_name = models.CharField(max_length=250,default='')
     #email = models.EmailField(max_length=100)
-    published_on = models.DateTimeField(auto_now_add=False, blank=True, null=True)
+    #published_on = models.DateField(("Date"), default=datetime.date.today)
+    published_on = models.DateField(null=True)
     #phone_number = models.CharField( max_length=17, blank=True) 
     category = models.CharField(max_length=100, choices=STATUS_CHOICES,default=False)
     author = models.CharField(max_length=30,default='')

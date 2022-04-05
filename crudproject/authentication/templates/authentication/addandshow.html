@@ -2,7 +2,7 @@
 {% block content %}
 
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <h4 class="text-center alert alert-info"> Add New Book</h4>
         <form action="" method="POST">
         {% csrf_token %}   
@@ -12,13 +12,12 @@
     </div>
 
      
-    <div class="col-sm-7 offset-1">
-        <!--<h4 class ="text-center alert alert-info"> Show Lead Information</h4>-->
+    <div class="col-sm-8 offset-1">
+        <h4 class ="text-center alert alert-info"> Book Information</h4>
         {% if ld %}
           <table class="table table-hover">
             <thead>
               <tr>
-                
                 <th scope="col">S.no</th>
                 <th scope="col">Book Name</th>
                 <th scope="col">Author</th>

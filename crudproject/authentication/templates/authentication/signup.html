@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class ="py-3">
-        <h1 class="text-center"><b>Salesperson Registeration</b></h1>
+        <h1 class="text-center"><b> Registeration Page</b></h1>
     </div>
     <section class="Form">
         <div class="container">
@@ -57,13 +57,13 @@
                             <div class="col-lg-6 mb-4">
                                <div class ="card-body">
                                   <div style="width: 22rem;">
-                                    <img src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/4b932533-f39d-4037-a4eb-6ace79f652e3.png" class="logo" width="30%" height="15%">
+                                    <img src="https://res.cloudinary.com/awesome-dev/images/w_300,h_300,c_fill/f_auto,q_auto/v1620969215/dde13ed9d661a25772dd745110cd1b14/dde13ed9d661a25772dd745110cd1b14-png?_i=AA" class="logo" width="30%" height="10%">
                                         <br>
-                                        <h2  style="color:purple" class="text-center alert alert-info">  Welcome to your Dashboard</h2>
+                                        <!--<h2  style="color:purple" class="text-center alert alert-info">  Welcome to your Dashboard</h2>
                                         <br> 
                                         <h4 class="card-text"> This is the homepage of lead Management system Register now to begin</h4>
-                                        <br>
-                                        <img src="https://media.istockphoto.com/vectors/man-working-on-the-internet-on-a-light-background-vector-id1025033348?k=20&m=1025033348&s=612x612&w=0&h=noBXUFqaUhWOCeKg1ekFZ9qHhKvwmFSt0ctITPNNy1w=" alt="..." height=140% width=120% > 
+                                        <br>-->
+                                        <img src="https://3.imimg.com/data3/II/MV/GLADMIN-11027521/1-250x250.png" alt="..." height=250% width=140% > 
                                   </div>
                                 </div>
                             </div>
@@ -79,9 +79,9 @@
                     
                     <div class="form-row">
                       
-                        <h5 style="color:purple" class="text-center alert alert-info">Register Sales Representative</h5>
+                        <h5 style="color:purple" class="text-center ">Register To Begin</h5>
                           <br>
-                            <form action="" method="post" novalidate>
+                            <form action="" class="text-center"  method="post" novalidate>
                                 {% csrf_token %}
                                 {% if form.non_field_errors%}
                                        {%for error in form.non_field_errors %}
@@ -99,6 +99,9 @@
                            <small {% if message.tags %} class = "{{message.tags}}" {% endif %}> {{message}} </small>
                          {% endfor%}
                          {% endif%}
+                         <br>
+                         <br>
+                         <br>
                          <a href="{%url 'login'%}">Already have an account? Login</a>
                           
                       </div>

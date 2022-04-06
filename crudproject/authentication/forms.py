@@ -16,7 +16,7 @@ class SignUpForm(UserCreationForm):
 class BooksRegistration(forms.ModelForm):
     class Meta:
         model = Books
-        fields = ['book_name','author','price','published_on','category']
+        fields = ['book_name','author','price','category']
         widgets = {
             'book_name':forms.TextInput(attrs={'class':'form-control'}),
             'author':forms.TextInput(attrs={'class':'form-control'}),

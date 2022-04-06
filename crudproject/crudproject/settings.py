@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'crudproject.wsgi.application'
 
 DATABASES = {
     'default': {
-       # 'ENGINE': 'django.db.backends.mysql',
+        #'ENGINE': 'django.db.backends.mysql',
         #'NAME': 'librarymanagementsystem',
         #'HOST': 'localhost',
-        #'USERNAME': 'root',
-        #'PASSWORD': '',
+        #'USERNAME': 'aastha',
+        #'PASSWORD': 'Password@123',
         #'PORT':'3306',
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, "db.sqlite3"),
@@ -132,4 +132,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DATE_INPUT_FORMATS = ['%d-%m-%Y']
+

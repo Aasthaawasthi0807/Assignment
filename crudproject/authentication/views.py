@@ -110,6 +110,7 @@ def update_data(request, id):
         fm = BooksRegistration(request.POST, instance=pi)
         if fm.is_valid():
             fm.save()
+            messages.success(request, 'Updated Book Detail Successfully!!')
     else:
         pi = Books.objects.get(pk=id)
         fm = BooksRegistration(instance=pi)
